@@ -79,53 +79,49 @@
 
 
   <body>
-    
-
-    <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <img class="bi me-2" width="100" height="50" role="img" src="images/Flykiosk logo.svg"/>
-          </a>
-    
-          
-    
-          
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-               <img src="menu Icons/Visa icon.svg" alt="visa" style="width:20px;margin-top:5px; ">
-                <li><a href="#" class="nav-link px-2 link-dark">Visa</a></li>
-
-                <div class="verticalLine"  style="margin: 15px 10px 0px 5px;"></div>
-
-                <img src="menu Icons/Passport icon.svg" alt="s" style="width:20px;margin-top:5px;">
-                <li><a href="#" class="nav-link px-2 link-dark">passport service</a></li>
-
-                <div class="verticalLine" style="margin: 15px 10px 0px 5px;"></div>
-
-                <img src="menu Icons/Attestation Icon.svg" alt="s" style="width:20px;margin-top:5px">
-                <li><a href="#" class="nav-link px-2 link-dark">Attestation</a></li>
-
-                <div class="verticalLine" style="margin: 15px 10px 0px 5px;"></div>
-
-                <img src="menu Icons/Photos icon.svg" alt="s" style="width:20px;margin-top:5px">
-                <li ><a href="#" class="nav-link px-2 link-dark">Photos</a></li>
-
-                <li style="margin:5px 10px 0px 30px;"><img src="menu Icons/choos country.svg" alt="country" style="width:30px"></li>
-                <button class="" value="Track your visa" style="padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;background:red;color:white">Track your visa</button>
-                <div class="verticalLine" style="margin: 5px 10px 0px 0px;height: 25px;
-                border-right: 2px solid black;
-                position: relative;
-               " ></div>
-                <li ><button href="#" class="btn btn-outline-dark btn-sm"  >Login</button></li>
-              </ul>
-            
-          
-        </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-default">
+      <div class="container-fluid" style="margin:0px 100px">
+        <a class="navbar-brand" href="#">  <img class="bi me-2" width="100" height="50" role="img" src="images/Flykiosk logo.svg"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-0">
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><img src="menu Icons/Visa icon.svg" alt="visa" style="width:20px;">Visa</a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><img src="menu Icons/Passport icon.svg" alt="s" style="width:20px;">passport service</a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><img src="menu Icons/Attestation Icon.svg" alt="s" style="width:20px;">Attestation</a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><img src="menu Icons/Photos icon.svg" alt="s" style="width:20px;">Photos</a></li>
+            <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"></a></li>
+            <li class="nav-item rounded mt-1">
+              <img src="menu Icons/choos country.svg" alt="country" style="width:30px">
+            </li>
+            <li class="nav-item rounded">
+              <button class="" value="Track your visa" style="padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;background:red;color:white">Track your visa</button>
+               
+            </li>
+            <li class="nav-item rounded ">
+              <div class="verticalLine" style="margin: 5px 10px 0px 0px;height: 25px;
+              border-right: 2px solid black;
+              position: relative;
+             " ></div>
+            </li>
+            <li class="nav-item rounded" style="width:fit-content">
+              <a class="nav-link btn btn-outline-dark " href="#"><i></i>Login</a>
+            </li>
+           
+          </ul>
+        </div>
       </div>
+    </nav>
 
+   
 
 
       <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-top: -25px;">
+<div id="demo" class="carousel slide" data-bs-ride="carousel" >
 
  
     <!-- Indicators/dots -->
@@ -184,12 +180,11 @@
  <div style="background:whitesmoke;height: 400px;">
   <!-- popular destinations-->
   
-    <div class="card" style="margin: -70px 250px auto 200px;border-radius: 25px;">
+    <div class="card" style="margin: -70px 150px auto 150px;border-radius: 25px;">
       <h6 style="width:auto;margin: 20px auto auto auto;text-align:center;">Popular Destinations </h6>
       <div class="card-body">
-        <div class="owl-carousel owl-theme" style="
-        text-align: -webkit-center;
-    ">
+        <div class="owl-carousel owl-theme" style="padding-left:40px">
+    
           <div class="item" >
               <h4><img src="Icons/99_ Approval.svg" alt="image"  /></h4>
           </div>
@@ -230,26 +225,16 @@
       </div>
     </div>
  
-
   
-    <h6 style="margin: 40px 250px auto 200px;text-align:center;">Why Apply with Flykiosk.com? </h6>
-    <div class="row d-flex " style="margin: 40px 0px 0px 200px;">
-
-      <div class="col-lg-2 col-md-2 me-5" style="background:white;">
-        <div class="row d-flex " >
-          <div class="col-lg-3 col-md-3 " style="background:white;width:auto;border-radius:3px;border-right:none;border-right:1px solid grey">
-            <img src="Icons/Speed.svg" style="margin-top:5px">
-
-          </div>
-          <div class="col-lg-10 col-md-10" style="background:white;width:auto;text-align:center;margin:auto">
-         <span>Speed &</span><br>
-         <span> Simplicity</span>
-            
-                      </div>
-        </div>
-        </div>
-
-        <div class="col-lg-2 col-md-2 me-5" style="background:white;">
+    <h6 style="text-align:center;margin-top:40px">Why Apply with Flykiosk.com? </h6>
+    
+  
+    <div class="row d-flex " style="margin: 40px 150px 0px 150px;">
+       <div class="col-lg-12 col-md-12">
+        <div class="row d-flex ">
+      
+       
+        <div class="col-lg-2 col-md-2 me-auto mb-2 " style="background:white;">
           <div class="row d-flex " >
             <div class="col-lg-2 col-md-2" style="background:white;width:auto">
             
@@ -261,9 +246,21 @@
                         </div>
           </div>
           </div>
-
-        
-          <div class="col-lg-2 col-md-2 me-5" style="background:white;">
+          <div class="col-lg-2 col-md-2 me-auto mb-2" style="background:white;">
+            <div class="row d-flex " >
+              <div class="col-lg-2 col-md-2" style="background:white;width:auto">
+              
+                <img src="Icons/99_ Approval.svg">
+              </div>
+              <div class="col-lg-10 col-md-10" style="background:white;width:auto;margin:auto">
+                99% Approval <br>History
+                
+                          </div>
+            </div>
+            </div>
+  
+          
+          <div class="col-lg-2 col-md-2 me-auto mb-2" style="background:white;">
             <div class="row d-flex " >
               <div class="col-lg-2 col-md-2" style="background:white;width:auto">
               <img src="Icons/Customer.svg">
@@ -275,9 +272,9 @@
                           </div>
             </div>
             </div>
+            
 
-
-            <div class="col-lg-2 col-md-2 me-5" style="background:white;">
+            <div class="col-lg-2 col-md-2 mb-2 " style="background:white;">
               <div class="row d-flex " >
                 <div class="col-lg-2 col-md-2" style="background:white;width:auto">
                   <img src="Icons/Safe_Secure.svg">
@@ -292,7 +289,8 @@
               </div>
       
       </div>
-  
+    </div>
+    </div>
   
 </div>
 
@@ -300,7 +298,7 @@
 
 
       
-  <div class="row d-flex " style="margin: 40px 100px auto 100px;" >
+  <div class="row d-flex " style="margin: 40px 100px auto 150px;" >
  
     <div class="col-lg-9 col-md-9 ">
       <h6 style="text-align: center;">Visa process</h6>
