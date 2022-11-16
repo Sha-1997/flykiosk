@@ -39,12 +39,63 @@
       z-index: 10;
       left:0;
       right:0;
-      top:20px;
+      top:40px;
       margin-left:auto;
       margin-right: auto;
      }
-
+.caption{
   
+  font-size: larger;
+  text-align:center;
+  color:white
+}
+.applyvisadiv{
+ 
+  text-align:center
+}
+.firstdiv,.seconddiv,.applydiv{
+background-color: white;
+
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* media code started */
+     @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-lg-2"] {
+    width: 50%;
+  }
+  #fixa{
+      position: absolute;
+      z-index: 10;
+      left:0;
+      right:0;
+      top:10px;
+      margin-left:auto;
+      margin-right: auto;
+     }
+  .caption{
+  font-size: smaller;
+  text-align:center;
+  color:white
+}
+.firstdiv,.seconddiv,.applydiv{
+background-color: white;
+width: 51%;
+}
+
+}
     </style>
 <style>
   .owl-nav .owl-next, .owl-nav .owl-prev {
@@ -135,25 +186,26 @@
     <div class="carousel-inner">
      
  <div id="fixa">
-  <div class="" style="width: 50rem;margin: 100px auto auto auto;text-align:center;color:white">
-    <h3 >Find visa information for all countries</h3>
-    <h6>Simplifying Travel around the world</h6>
+  <div class="caption align-items-center justify-content-center" >
+    <span >Find visa information for all countries</span><br>
+    <span>Simplifying Travel around the world</span>
 </div>
 
-<div class="row d-flex " style="width: 40rem;margin: 0px auto auto auto;text-align:center">
+<div class="row d-flex applyvisadiv align-items-center justify-content-center" >
 
-  <div class="col-lg-4 col-md-4" style="background:white;padding:2px">
+  <div class="col-lg-3 col-md-3 mb-2 p-2 firstdiv" >
     <select style="border: none;background: none;"><option>Where am I from</option></select>
-    <span class="verticalLine"  style="padding-left: 24px;"></span>
+  
   </div>
-  <div class="col-lg-5 col-md-5" style="background:white;padding:2px">
+  <div class="col-lg-3 col-md-3 mb-2 p-2 seconddiv" >
     <select style="border: none;background: none;"><option>Where am I Going</option></select>
 
   </div>
-  
-  <div class="col-lg-2 col-md-2 card" style="background:white;padding:2px;margin-left: 10px;border-radius: 2px;color:red">
-   <a>Apply visa</a>
-  </div>
+  <div class="col-lg-2 col-md-2 mb-2 p-2 applydiv" >
+    <a>Apply visa</a>
+
+ 
+</div>
 
 
 </div>
@@ -177,7 +229,7 @@
   </div>
 
  
- <div style="background:whitesmoke;height: 400px;">
+ <div style="background:whitesmoke;height: auto;padding-bottom:10px">
   <!-- popular destinations-->
   
     <div class="card" style="margin: -70px 150px auto 150px;border-radius: 25px;">
@@ -229,30 +281,29 @@
     <h6 style="text-align:center;margin-top:40px">Why Apply with Flykiosk.com? </h6>
     
   
-    <div class="row d-flex " style="margin: 40px 150px 0px 150px;">
-       <div class="col-lg-12 col-md-12">
-        <div class="row d-flex ">
+    
+        <div class="row d-flex  " style="margin: 20px 150px">
       
        
-        <div class="col-lg-2 col-md-2 me-auto mb-2 " style="background:white;">
-          <div class="row d-flex " >
-            <div class="col-lg-2 col-md-2" style="background:white;width:auto">
-            
-              <img src="Icons/99_ Approval.svg">
-            </div>
-            <div class="col-lg-10 col-md-10" style="background:white;width:auto;margin:auto">
-              99% Approval <br>History
-              
-                        </div>
-          </div>
-          </div>
-          <div class="col-lg-2 col-md-2 me-auto mb-2" style="background:white;">
+          <div class="col-lg-2 col-md-2 mb-2 me-auto" style="background:white;">
             <div class="row d-flex " >
               <div class="col-lg-2 col-md-2" style="background:white;width:auto">
               
                 <img src="Icons/99_ Approval.svg">
               </div>
-              <div class="col-lg-10 col-md-10" style="background:white;width:auto;margin:auto">
+              <div class="col-lg-10 col-md-10" style="background:white;width:auto;">
+                99% Approval <br>History
+                
+                          </div>
+            </div>
+            </div>
+          <div class="col-lg-2 col-md-2 mb-2 me-auto" style="background:white;">
+            <div class="row d-flex " >
+              <div class="col-lg-2 col-md-2" style="background:white;width:auto">
+              
+                <img src="Icons/99_ Approval.svg">
+              </div>
+              <div class="col-lg-10 col-md-10" style="background:white;width:auto;">
                 99% Approval <br>History
                 
                           </div>
@@ -260,13 +311,13 @@
             </div>
   
           
-          <div class="col-lg-2 col-md-2 me-auto mb-2" style="background:white;">
+          <div class="col-lg-2 col-md-2  mb-2 me-auto" style="background:white;">
             <div class="row d-flex " >
               <div class="col-lg-2 col-md-2" style="background:white;width:auto">
               <img src="Icons/Customer.svg">
     
               </div>
-              <div class="col-lg-10 col-md-10" style="background:white;width:auto;margin:auto">
+              <div class="col-lg-10 col-md-10" style="background:white;width:auto;">
                 Customer <br>Support
                 
                           </div>
@@ -280,7 +331,7 @@
                   <img src="Icons/Safe_Secure.svg">
       
                 </div>
-                <div class="col-lg-10 col-md-10" style="background:white;width:auto;margin:auto">
+                <div class="col-lg-10 col-md-10" style="background:white;width:auto;">
                   Safe &
                   Secure
                   
@@ -289,8 +340,7 @@
               </div>
       
       </div>
-    </div>
-    </div>
+    
   
 </div>
 
