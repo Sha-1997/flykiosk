@@ -1,4 +1,7 @@
 
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,6 +31,10 @@
       font-family: 'Poppins';
       
   }
+  .headbar
+  {
+    margin:0px 100px
+  }
     .verticalLine {
     height: 15px;
     border-right: 2px solid red;
@@ -39,7 +46,7 @@
       z-index: 10;
       left:0;
       right:0;
-      top:40px;
+      top:100px;
       margin-left:auto;
       margin-right: auto;
      }
@@ -57,6 +64,23 @@
 background-color: white;
 
 }
+.applydiv{
+  color:red;
+ 
+  width:10%;
+    
+}
+.carousel-inner{
+  height: 550px;
+}
+.carousel-item,.carousel-item img{
+
+  height:100%
+}
+.populardestinations{
+  margin: -70px 150px auto 150px;
+  border-radius: 25px;
+}
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -71,30 +95,50 @@ background-color: white;
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 /* media code started */
-     @media only screen and (max-width: 768px) {
+     @media only screen and (max-width: 992px) {
   /* For mobile phones: */
   [class*="col-lg-2"] {
     width: 50%;
+  }
+  .headbar
+  {
+    margin:0px;
   }
   #fixa{
       position: absolute;
       z-index: 10;
       left:0;
       right:0;
-      top:10px;
+      top:40px;
       margin-left:auto;
       margin-right: auto;
      }
   .caption{
-  font-size: smaller;
+  font-size: medium;
   text-align:center;
   color:white
 }
-.firstdiv,.seconddiv,.applydiv{
+.firstdiv,.seconddiv{
 background-color: white;
 width: 51%;
 }
+.applydiv{
+  background: none;
+  width: 51%;
 
+  }
+  .applydiv a{
+    background: white;
+    
+    padding: .5rem;
+    width: 51%;
+  
+    }
+
+.populardestinations{
+  margin: -70px 50px auto 50px;
+  border-radius: 25px;
+}
 }
     </style>
 <style>
@@ -122,7 +166,7 @@ width: 51%;
 }
 
 
-.visacollapse:not( .collapsed) {
+.visacollapse:not(.collapsed) {
   background-color: red;
   color: white;
 }
@@ -131,7 +175,7 @@ width: 51%;
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-default">
-      <div class="container-fluid" style="margin:0px 100px">
+      <div class="container-fluid headbar" >
         <a class="navbar-brand" href="#">  <img class="bi me-2" width="100" height="50" role="img" src="images/Flykiosk logo.svg"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -193,16 +237,16 @@ width: 51%;
 
 <div class="row d-flex applyvisadiv align-items-center justify-content-center" >
 
-  <div class="col-lg-3 col-md-3 mb-2 p-2 firstdiv" >
+  <div class="col-lg-2 col-md-2 mb-2 p-2 firstdiv" >
     <select style="border: none;background: none;"><option>Where am I from</option></select>
   
   </div>
-  <div class="col-lg-3 col-md-3 mb-2 p-2 seconddiv" >
+  <div class="col-lg-2 col-md-2 mb-2 p-2  seconddiv" >
     <select style="border: none;background: none;"><option>Where am I Going</option></select>
 
   </div>
-  <div class="col-lg-2 col-md-2 mb-2 p-2 applydiv" >
-    <a>Apply visa</a>
+  <div class="col-lg-2 col-md-2 ms-2 mb-2 p-2 applydiv" >
+    <a >Apply visa</a>
 
  
 </div>
@@ -232,10 +276,10 @@ width: 51%;
  <div style="background:whitesmoke;height: auto;padding-bottom:10px">
   <!-- popular destinations-->
   
-    <div class="card" style="margin: -70px 150px auto 150px;border-radius: 25px;">
+    <div class="card populardestinations" >
       <h6 style="width:auto;margin: 20px auto auto auto;text-align:center;">Popular Destinations </h6>
       <div class="card-body">
-        <div class="owl-carousel owl-theme" style="padding-left:40px">
+        <div class="owl-carousel owl-theme ">
     
           <div class="item" >
               <h4><img src="Icons/99_ Approval.svg" alt="image"  /></h4>
@@ -247,32 +291,32 @@ width: 51%;
               <h4><img src="Icons/Speed.svg" alt="image" /></h4>
           </div>
           <div class="item">
-              <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/Speed.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/Customer.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/Customer.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/Speed.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/Speed.svg" alt="image" /></h4>
-          </div>
-          <div class="item">
-              <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
-          </div>
+            <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/Speed.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/Customer.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/Customer.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/Speed.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/Speed.svg" alt="image" /></h4>
+        </div>
+        <div class="item">
+            <h4><img src="Icons/99_ Approval.svg" alt="image" /></h4>
+        </div>
       </div>
       </div>
     </div>
