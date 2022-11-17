@@ -13,9 +13,9 @@
 	<meta charset="UTF-8">
 
     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
@@ -64,6 +64,10 @@
 background-color: white;
 
 }
+.firstdiv{
+
+  border-right: 1px solid red;
+}
 .applydiv{
   color:red;
  
@@ -80,6 +84,15 @@ background-color: white;
 .populardestinations{
   margin: -70px 150px auto 150px;
   border-radius: 25px;
+}
+.trackvisabutton{
+  padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;background:red;color:white
+}
+.loginbutton{
+  padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;border-radius:3px;
+}
+.applyflykiosk{
+  margin: 20px 150px;text-align: center;
 }
 /* For desktop: */
 .col-1 {width: 8.33%;}
@@ -113,15 +126,26 @@ background-color: white;
       margin-left:auto;
       margin-right: auto;
      }
+     .verticalLine{
+       display:none;
+     }
+    .trackvisabutton{
+  padding: 0px 20px 25px 10px;height: 15px;margin: 0px;background:red;color:white
+}
+.loginbutton{
+  padding: 0px 20px 25px 10px;height: 15px;margin: 0px;border-radius:3px;
+}
   .caption{
   font-size: medium;
   text-align:center;
-  color:white
+  color:white;
 }
 .firstdiv,.seconddiv{
 background-color: white;
+
 width: 51%;
 }
+
 .applydiv{
   background: none;
   width: 51%;
@@ -138,6 +162,17 @@ width: 51%;
 .populardestinations{
   margin: -70px 50px auto 50px;
   border-radius: 25px;
+}
+.firstdiv{
+
+border-right: none;
+}
+.applyflykiosk{
+  margin: 20px 50px 20px 50px;
+
+}
+.applyflykioskdivs{
+  width: 49%;
 }
 }
     </style>
@@ -190,11 +225,11 @@ width: 51%;
             <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
             <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><img src="menu Icons/Photos icon.svg" alt="s" style="width:20px;">Photos</a></li>
             <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"></a></li>
-            <li class="nav-item rounded mt-1">
+            <li class="nav-item rounded mt-1 mb-1">
               <img src="menu Icons/choos country.svg" alt="country" style="width:30px">
             </li>
             <li class="nav-item rounded">
-              <button class="" value="Track your visa" style="padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;background:red;color:white">Track your visa</button>
+              <button class="trackvisabutton mb-1" value="Track your visa" >Track your visa</button>
                
             </li>
             <li class="nav-item rounded ">
@@ -203,8 +238,9 @@ width: 51%;
               position: relative;
              " ></div>
             </li>
-            <li class="nav-item rounded" style="width:fit-content">
-              <a class="nav-link btn btn-outline-dark " href="#"><i></i>Login</a>
+            <li class="nav-item rounded">
+              <button class="loginbutton mb-1 btn btn-outline-dark" value="Track your visa" >Login</button>
+               
             </li>
            
           </ul>
@@ -326,10 +362,10 @@ width: 51%;
     
   
     
-        <div class="row d-flex  " style="margin: 20px 150px">
+        <div class="row d-flex  applyflykiosk" >
       
        
-          <div class="col-lg-2 col-md-2 mb-2 me-auto" style="background:white;">
+          <div class="col-lg-2 col-md-2 mb-2 me-auto applyflykioskdivs" style="background:white;">
             <div class="row d-flex " >
               <div class="col-lg-2 col-md-2" style="background:white;width:auto">
               
@@ -341,7 +377,7 @@ width: 51%;
                           </div>
             </div>
             </div>
-          <div class="col-lg-2 col-md-2 mb-2 me-auto" style="background:white;">
+          <div class="col-lg-2 col-md-2 mb-2 me-auto applyflykioskdivs" style="background:white;">
             <div class="row d-flex " >
               <div class="col-lg-2 col-md-2" style="background:white;width:auto">
               
@@ -355,7 +391,7 @@ width: 51%;
             </div>
   
           
-          <div class="col-lg-2 col-md-2  mb-2 me-auto" style="background:white;">
+          <div class="col-lg-2 col-md-2  mb-2 me-auto applyflykioskdivs" style="background:white;">
             <div class="row d-flex " >
               <div class="col-lg-2 col-md-2" style="background:white;width:auto">
               <img src="Icons/Customer.svg">
@@ -369,7 +405,7 @@ width: 51%;
             </div>
             
 
-            <div class="col-lg-2 col-md-2 mb-2 " style="background:white;">
+            <div class="col-lg-2 col-md-2 mb-2 me-auto applyflykioskdivs" style="background:white;">
               <div class="row d-flex " >
                 <div class="col-lg-2 col-md-2" style="background:white;width:auto">
                   <img src="Icons/Safe_Secure.svg">
@@ -756,17 +792,7 @@ width: 51%;
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
