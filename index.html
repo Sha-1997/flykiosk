@@ -13,278 +13,19 @@
 	<meta charset="UTF-8">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="bootstrap5.0.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="bootstrap5.0.1/js/bootstrap.bundle.min.js"></script>
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
-   <title>Hello, world!</title>
+ <!-- Font Awesome Icon Library -->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>Flykiosk</title>
   </head>
-  <style>
-
-    @font-face {
-      font-family: Poppins;
-      src: url(Font/Poppins-Regular.otf);
-    }
-    body {
-      font-family: 'Poppins';
-      
-  }
-  .headbar
-  {
-    margin:0px 100px
-  }
-    .verticalLine {
-    height: 15px;
-    border-right: 2px solid red;
-    position: relative;
-    margin-top: 15px;
-    }
-    #fixa{
-      position: absolute;
-      z-index: 10;
-      left:0;
-      right:0;
-      top:100px;
-      margin-left:auto;
-      margin-right: auto;
-     }
-.caption{
   
-  font-size: larger;
-  text-align:center;
-  color:white
-}
-.applyvisadiv{
- 
-  text-align:center
-}
-.firstdiv,.seconddiv,.applydiv{
-background-color: white;
-
-}
-.firstdiv{
-
-  border-right: 1px solid red;
-}
-.applydiv{
-  color:red;
- 
-  width:10%;
-    
-}
-.carousel-inner{
-  height: 550px;
-}
-.carousel-item,.carousel-item img{
-
-  height:100%
-}
-.populardestinations{
-  margin: -70px 150px auto 150px;
-  border-radius: 25px;
-}
-.trackvisabutton{
-  padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;background:red;color:white
-}
-.loginbutton{
-  padding: 0px 20px 25px 10px;height: 15px;margin: 5px 10px 0px 10px;border-radius:3px;
-}
-.applyflykiosk{
-  margin: 20px 150px;text-align: center;
-}
-.applyflykioskdivs{
-  height: fit-content;
-    margin-inline-end: 1.5rem;
-    width: 16%;
-    margin: auto;
-    border-radius: 3px;
-}
-.visaprocess{
-  margin: 40px 100px auto 150px
-}
-.visacollapse
-{
-  border:1px solid gray;height: fit-content;
-  margin-inline-end: 1.5rem;
-    width: 24%;
-    margin:auto
-}
-.visaprocessdiv2{
-  border-left:1px solid grey;padding: 0px 0px 0px 20px;
-}
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-/* media code started */
-     @media only screen and (max-width: 992px) {
-  /* For mobile phones: */
-  [class*="col-lg-2"] {
-    width: 50%;
-  }
-  .headbar
-  {
-    margin:0px;
-  }
-  #fixa{
-      position: absolute;
-      z-index: 10;
-      left:0;
-      right:0;
-      top:40px;
-      margin-left:auto;
-      margin-right: auto;
-     }
-
-    
-     .verticalLine{
-       display:none;
-     }
-    .trackvisabutton{
-  padding: 0px 20px 25px 10px;height: 15px;margin: 0px;background:red;color:white
-}
-.loginbutton{
-  padding: 0px 20px 25px 10px;height: 15px;margin: 0px;border-radius:3px;
-}
-  .caption{
-  font-size: medium;
-  text-align:center;
-  color:white;
-}
-.firstdiv,.seconddiv{
-background-color: white;
-
-width: 51%;
-}
-
-.applydiv{
-  background: none;
-  width: 51%;
-
-  }
-  .applydiv a{
-    background: white;
-    
-    padding: .5rem;
-    width: 51%;
-  
-    }
-
-.populardestinations{
-  margin: -70px 50px auto 50px;
-  border-radius: 25px;
-}
-.firstdiv{
-
-border-right: none;
-}
-.applyflykiosk{
-  margin: 20px 50px 20px 50px;
-
-}
-.applyflykioskdivs{
-  width: 49%;
-  height: fit-content;
-  margin-inline-end: 1.5rem;
- 
-  margin: auto;
-  border-radius: 3px;
-}
-.visaprocess{
-  margin: 40px 50px auto 50px
-}
-.visacollapse
-{
-  border:1px solid gray;height: fit-content;
-  margin:auto;
-  margin-inline-end: .1rem;
-    width: 24%;
-}
-.visaprocessdiv1{
-  width: 100%;
-}
-.visaprocessdiv2{
-  width: 100%;
-  margin-top:40px;
-  border: none;
-}
-.visaprocessdiv2 .div1{
-  width: 20px;
- 
-}
-.visaprocessdiv2 .div2{
-  padding: 0px 0px 0px 20px;
-  width: 90%;
- 
-}
-}
-
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-
-  .visacollapse
-  {
-    border:1px solid gray;height: fit-content;
-    margin-inline-end: .1rem;
-    width: 100%;
-    margin:auto;
-  }
- 
-  .applyflykioskdivs{
-    width: 100%;
-    height: fit-content;
-    margin-inline-end: 1.5rem;
-   
-    margin: auto;
-    border-radius: 3px;
-  }
-  
-
-}
-
-    </style>
-<style>
-  .owl-nav .owl-next, .owl-nav .owl-prev {
-    position: absolute;
-    top: 48%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.owl-nav .owl-next {
-    right: 0;
-    display: flex;
-    margin-right: 2%;
-    font-size: 25px !important;
-}
-.owl-nav .owl-prev{
-    left: 0;
-    display: flex;
-    margin-left: 2%;
-    font-size: 25px !important;
-}
-.item{
-
-  width:100px;
-}
-
-
-.visacollapse:not(.collapsed) {
-  background-color: red;
-  color: white;
-}
-</style>
 
 
   <body>
@@ -787,7 +528,12 @@ border-right: none;
               <h5 style="color:red;font-size:large">Excellent Service</h5>
               <h6 style="font-size:medium">Sure Name</h6>
               <span style="font-size:smaller">Contray to popular belief,Lorem Ipsum is got simply random text.it has roots in apiece of classical Latin literature from 45 Bc,making it over 2000 years old</span>
-            
+              <br>
+              <span class="fa fa-star checked" style="color: orange;"></span>
+              <span class="fa fa-star checked" style="color: orange;"></span>
+              <span class="fa fa-star checked" style="color: orange;"></span>
+              <span class="fa fa-star checked" style="color: orange;"></span>
+              <span class="fa fa-star checked" style="color: orange;"></span>
             </div>
 
             </div>
@@ -808,7 +554,12 @@ border-right: none;
                 <h5 style="color:red;font-size:large">Excellent Service</h5>
                 <h6 style="font-size:medium">Sure Name</h6>
                 <span style="font-size:smaller">Contray to popular belief,Lorem Ipsum is got simply random text.it has roots in apiece of classical Latin literature from 45 Bc,making it over 2000 years old</span>
-              
+                <br>
+                <span class="fa fa-star checked" style="color: orange;"></span>
+                <span class="fa fa-star checked" style="color: orange;"></span>
+                <span class="fa fa-star checked" style="color: orange;"></span>
+                <span class="fa fa-star checked" style="color: orange;"></span>
+                <span class="fa fa-star checked" style="color: orange;"></span>
               </div>
   
               </div>
@@ -828,8 +579,13 @@ border-right: none;
                   <h5 style="color:red;font-size:large">Excellent Service</h5>
                   <h6 style="font-size:medium">Sure Name</h6>
                   <span style="font-size:smaller">Contray to popular belief,Lorem Ipsum is got simply random text.it has roots in apiece of classical Latin literature from 45 Bc,making it over 2000 years old</span>
-                
-                  <div  style="margin: 40px auto auto auto;" >
+                  <br>
+                  <span class="fa fa-star checked" style="color: orange;"></span>
+                  <span class="fa fa-star checked" style="color: orange;"></span>
+                  <span class="fa fa-star checked" style="color: orange;"></span>
+                  <span class="fa fa-star checked" style="color: orange;"></span>
+                  <span class="fa fa-star checked" style="color: orange;"></span>
+                  <div  style="margin: 20px auto auto auto;" >
                     <a href="" class="btn btn-danger" style="border-radius:3px;padding:0px 20px">see all</a>
                     </div>
                 </div>
@@ -849,30 +605,47 @@ border-right: none;
 
 </div>
 
-<div>footer
-</div>
 
-
-<script>
-  $(document).ready(function(){
-	$(".visacollapse").click(function(){
+  <footer class="py-3 my-4" style="background:grey">
     
-		$('.collapse').collapse('hide');
-	});
-
- 
-});
-
-</script>
-
-
-
-
+    <div style="background-color: black;">
+  
+    <ul class="nav   mb-3" style="margin:0px 150px">
+      <li >
+        <u1>
+          <li class="nav-item" ><a href="#" class="nav-link px-2 " style="color:white">We accept></a></li>
+          <li class="nav-item " ><a href="#" class="nav-link px-2 " style="color:white;background-color: white;">Rupay</a></li>
+          <li class="nav-item" ><a href="#" class="nav-link px-2 " style="color:white;background-color: white;">upi</a></li>
+          <li class="nav-item" ><a href="#" class="nav-link px-2 " style="color:white;background-color: white;">visa</a></li>
+          <li class="nav-item" ><a href="#" class="nav-link px-2 " style="color:white;background-color: white;">mastercard</a></li>
+          <li class="nav-item" ><a href="#" class="nav-link  " style="color:white;background-color: white;">netbanking</a></li>
+        
+        </u1>
+      </li>
+      <li style="margin:auto">
+        <ul class="nav "  >
+      <li class="nav-item " ><a href="#" class="nav-link px-2 " style="color:white">About Us</a></li>
+      <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 " style="color:white">Offices</a></li>
+      <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 " style="color:white">Terms of use</a></li>
+      <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 " style="color:white">Privacy Policy</a></li>
+      <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 " style="color:white">Support</a></li>
+      <li class="nav-item rounded"><a href="#" class="nav-link px-2 link-dark"><div class="verticalLine" style="margin: 5px 0px 0px 0px;"></div></a></li>
+   
+      <li class="nav-item"><a href="#" class="nav-link px-2 " style="color:white">Direct payment</a></li>
+    </ul>
+    </li>
+    </ul>
+  </div>
+    <p class="text-center " style="color:whitesmoke">© 2022 Flykiosk pvt Ltd.All rights Reserved</p>
+   
+  </footer>
 
    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <!-- Owl Carousel -->
+ <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- custom JS code after importing jquery and owl -->
     <script type="text/javascript">
@@ -902,5 +675,17 @@ border-right: none;
             }
         })
     </script>
+    <script>
+      $(document).ready(function(){
+      $(".visacollapse").click(function(){
+        
+        $('.collapse').collapse('hide');
+      });
+    
+     
+    });
+    
+    </script>
+    
   </body>
 </html>
